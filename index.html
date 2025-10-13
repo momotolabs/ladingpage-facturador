@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facturador Momoto - Planes y Precios</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="antialiased bg-white text-momoto-gray-dark">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl font-bold text-momoto-blue">Facturador Momoto</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#proposicion-valor" class="text-gray-600 hover:text-momoto-blue">Propuesta de Valor</a>
+        <a href="#planes" class="text-gray-600 hover:text-momoto-blue">Planes</a>
+        <a href="#comparativa" class="text-gray-600 hover:text-momoto-blue">Comparativa</a>
+        <a href="#cta"
+          class="bg-momoto-red text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition">Empezar Ahora</a>
+      </div>
+      <div class="md:hidden">
+        <a href="#cta"
+          class="bg-momoto-red text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition text-sm">Empezar</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">
+          La Facturación Electrónica en El Salvador,
+          <span class="text-momoto-blue">simplificada.</span>
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+          Olvídate de la complejidad del DTE. Te damos el control total con una plataforma diseñada para ser simple,
+          segura y con el soporte local que tu negocio merece. Pasa de la confusión al cumplimiento en minutos.
+        </p>
+        <div class="mt-10">
+          <a href="#planes"
+            class="bg-momoto-blue text-white font-bold text-lg py-4 px-8 rounded-lg hover:bg-blue-900 transition">Descubre
+            tu Plan Ideal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="proposicion-valor" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800">Más que un facturador, un aliado para tu negocio</h2>
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Nos enfocamos en lo que realmente importa para que tú te
+            dediques a crecer. Estos son nuestros pilares y diferenciadores únicos.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="text-4xl mb-4">🤝</div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Servicio "Guante Blanco"</h3>
+            <p class="text-gray-600">No te preocupes por los trámites con Hacienda. Nosotros gestionamos el complejo
+              proceso de registro y habilitación por ti. Incluido en todos los planes.</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Panel de Negocios Integrado</h3>
+            <p class="text-gray-600">Obtén inteligencia de negocio, no solo facturas. Visualiza tus ventas, identifica
+              tus mejores clientes y toma decisiones basadas en datos reales.</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="text-4xl mb-4">🇸🇻</div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Soporte Experto y Local</h3>
+            <p class="text-gray-600">¿Dudas? Te atendemos por WhatsApp. Somos un equipo en El Salvador que entiende tu
+              realidad y habla tu mismo idioma. Estamos para ayudarte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section id="planes" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800">Encuentra el plan perfecto para tu negocio</h2>
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Soluciones claras y escalables, sin costos ocultos. Elige cómo
+            quieres empezar a facturar hoy mismo.</p>
+          <div class="mt-6 flex justify-center items-center space-x-4">
+            <span class="text-gray-600">Vista Simple</span>
+            <label for="viewToggle" class="flex items-center cursor-pointer">
+              <div class="relative">
+                <input type="checkbox" id="viewToggle" class="sr-only">
+                <div class="block bg-gray-300 w-14 h-8 rounded-full"></div>
+                <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+              </div>
+            </label>
+            <span class="text-gray-600 font-bold">Comparación Detallada</span>
+          </div>
+        </div>
+
+        <!-- Plan Cards View -->
+        <div id="planCards" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+
+        <!-- Detailed Table View -->
+        <div id="planTable" class="hidden bg-white rounded-xl shadow-xl overflow-hidden">
+          <div class="overflow-x-auto scrolling-touch">
+            <table class="w-full text-sm text-left text-gray-500">
+              <thead id="tableHeader" class="text-xs text-white uppercase bg-momoto-blue">
+              </thead>
+              <tbody id="tableBody">
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Add-ons Section -->
+        <div class="mt-16 text-center">
+          <h3 class="text-2xl font-bold text-gray-800">¿Necesitas aún más poder?</h3>
+          <p class="mt-2 text-gray-600">Potencia tu plan con nuestros módulos adicionales.</p>
+          <div id="addons" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Visualization Section -->
+    <section id="comparativa" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800">Visualiza el Valor de Crecer</h2>
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Compara de forma interactiva las características clave de cada
+            plan y descubre por qué escalar con nosotros tiene sentido para tu negocio.</p>
+        </div>
+        <div class="max-w-md mx-auto mb-8">
+          <label for="chartMetricSelector" class="block mb-2 text-sm font-medium text-gray-900">Selecciona una métrica
+            para comparar:</label>
+          <select id="chartMetricSelector"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-momoto-blue focus:border-momoto-blue block w-full p-2.5">
+            <option value="dtes" selected>DTEs por Mes</option>
+            <option value="users">Usuarios Incluidos</option>
+            <option value="storage">Límite de Datos (GB)</option>
+            <option value="emails">Cuota de envío de correos</option>
+          </select>
+        </div>
+        <div class="relative w-full max-w-[800px] mx-auto h-[300px] max-h-[400px]">
+          <canvas id="plansChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-momoto-blue">
+      <div class="container mx-auto px-6 py-20 text-center">
+        <h2 class="text-3xl font-extrabold text-white">¿Listo para tomar el control de tu facturación?</h2>
+        <p class="mt-4 text-lg text-blue-200 max-w-2xl mx-auto">Únete a los negocios que ya están facturando de forma
+          inteligente en El Salvador. Elige tu plan y empieza en minutos.</p>
+        <div class="mt-8">
+          <a href="#planes"
+            class="bg-momoto-red text-white font-bold text-xl py-4 px-10 rounded-lg hover:bg-red-700 transition">Ver
+            Planes y Precios</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Facturador Momoto. Un producto de MomotoLabs.</p>
+      <p class="text-sm text-gray-400 mt-2">Hecho con 💙 en El Salvador.</p>
+    </div>
+  </footer>
+
+  <script src="dist/main.js"></script>
+</body>
+
+</html>
