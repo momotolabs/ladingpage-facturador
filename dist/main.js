@@ -91,10 +91,10 @@ document.addEventListener('DOMContentLoaded', function () {
       'Acceso a la API', 'Soporte prioritario'
     ],
     addons: [
-      { name: 'Módulo de Inventario Básico', price: '7.50' },
-      { name: 'Módulo de Cuentas por Pagar y Gastos', price: '5.50' },
-      { name: 'Paquete de 5 Usuarios Adicionales', price: '9.50' },
-      { name: 'Paquete de 5 POS Adicionales', price: '5.50' }
+      { name: 'Módulo de Inventario Básico', subTitle: 'Próximamente' },
+      { name: 'Punto de ventas', subTitle: 'Próximamente' },
+      { name: 'Paquete de Usuarios Adicionales', subTitle: 'Próximamente' },
+      { name: 'Paquete de POS Adicionales', subTitle: 'Próximamente' }
     ]
   };
 
@@ -168,9 +168,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function renderAddons() {
     addonsContainer.innerHTML = planData.addons.map(addon => `
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center flex justify-between flex-col">
                         <p class="font-bold text-gray-700">${addon.name}</p>
-                        <p class="text-momoto-blue font-bold mt-1">$${addon.price}/mes</p>
+                        <p class="text-momoto-blue font-bold mt-1">${addon.subTitle}</p>
                     </div>
                 `).join('');
   }
@@ -311,4 +311,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  const year = document.getElementById('current-year')
+  const currentYear = new Date().getFullYear()
+  year.innerText = currentYear 
 });

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-momoto-blue: #00008B;
+  --color-momoto-red: #FF0000;
+  --color-momoto-purple: #8A2BE2;
+  --color-momoto-gray-dark: #333333;
+
+  /* box shadow */
+  --shadow-custom-size:  0 15px 15px rgba(0, 0, 0, 0.15);
+  /* .bg-momoto-blue { background-color: #00008B; }
+        .text-momoto-blue { color: #00008B; }
+        .border-momoto-blue { border-color: #00008B; }
+        .bg-momoto-red { background-color: #FF0000; }
+        .text-momoto-red { color: #FF0000; }
+        .bg-momoto-purple { background-color: #8A2BE2; }
+        .text-momoto-purple { color: #8A2BE2; } */
+}
+
+@layer utilities {
+  .scrolling-touch {
+    -webkit-overflow-scrolling: touch;
+  }
+  .scrolling-auto {
+    -webkit-overflow-scrolling: auto;
+  }
+}

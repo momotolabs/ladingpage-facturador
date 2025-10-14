@@ -7,6 +7,7 @@
   <title>Facturador Momoto - Planes y Precios</title>
   <link rel="stylesheet" href="dist/output.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="shortcut icon" href="./dist/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Lato:wght@400;700&display=swap"
@@ -18,7 +19,9 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <span class="text-2xl font-bold text-momoto-blue">Facturador Momoto</span>
+        <a href="/" aria-label="Inicio">
+          <img src="./dist/img/logo.png" alt="Logo facturador Momoto" class="w-48">
+        </a>
       </div>
       <div class="hidden md:flex items-center space-x-6">
         <a href="#proposicion-valor" class="text-gray-600 hover:text-momoto-blue">Propuesta de Valor</a>
@@ -45,7 +48,7 @@
         </h1>
         <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
           Olvídate de la complejidad del DTE. Te damos el control total con una plataforma diseñada para ser simple,
-          segura y con el soporte local que tu negocio merece. Pasa de la confusión al cumplimiento en minutos.
+          segura y con el soporte adecuado que tu negocio merece. Pasa de la confusión al cumplimiento en minutos.
         </p>
         <div class="mt-10">
           <a href="#planes"
@@ -67,20 +70,33 @@
           <div class="bg-white p-8 rounded-xl shadow-lg">
             <div class="text-4xl mb-4">🤝</div>
             <h3 class="text-xl font-bold text-gray-800 mb-2">Servicio "Guante Blanco"</h3>
-            <p class="text-gray-600">No te preocupes por los trámites con Hacienda. Nosotros gestionamos el complejo
-              proceso de registro y habilitación por ti. Incluido en todos los planes.</p>
+            <p class="text-gray-600">No te preocupues por las pruebas a realizar
+              con el Ministerio de Hacienda. Nosotros te acompañamos en
+              el proceso de registro, pruebas y habilitación.
+            </p>
           </div>
           <div class="bg-white p-8 rounded-xl shadow-lg">
             <div class="text-4xl mb-4">📊</div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Panel de Negocios Integrado</h3>
-            <p class="text-gray-600">Obtén inteligencia de negocio, no solo facturas. Visualiza tus ventas, identifica
-              tus mejores clientes y toma decisiones basadas en datos reales.</p>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Simplicidad</h3>
+            <p class="text-gray-600">
+              Aseguramos que que los usuarios puedan
+              generar, transmitir, recibir y almacenar todos los tipos de DTE
+              requeridos por la DGII de manera 100% compatible con la
+              normativa vigente.
+            </p>
           </div>
           <div class="bg-white p-8 rounded-xl shadow-lg">
             <div class="text-4xl mb-4">🇸🇻</div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Soporte Experto y Local</h3>
-            <p class="text-gray-600">¿Dudas? Te atendemos por WhatsApp. Somos un equipo en El Salvador que entiende tu
-              realidad y habla tu mismo idioma. Estamos para ayudarte.</p>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Soporte por expertos
+            </h3>
+            <p class="text-gray-600">
+              Somos un
+              equipo que entiende tu
+              realidad y habla tu
+              mismo idioma. Estamos
+              para ayudarte.
+            </p>
           </div>
         </div>
       </div>
@@ -93,7 +109,7 @@
           <h2 class="text-3xl font-bold text-gray-800">Encuentra el plan perfecto para tu negocio</h2>
           <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Soluciones claras y escalables, sin costos ocultos. Elige cómo
             quieres empezar a facturar hoy mismo.</p>
-          <div class="mt-6 flex justify-center items-center space-x-4">
+          <div class="mt-6 flex justify-center items-center space-x-4 sr-only">
             <span class="text-gray-600">Vista Simple</span>
             <label for="viewToggle" class="flex items-center cursor-pointer">
               <div class="relative">
@@ -147,8 +163,8 @@
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-momoto-blue focus:border-momoto-blue block w-full p-2.5">
             <option value="dtes" selected>DTEs por Mes</option>
             <option value="users">Usuarios Incluidos</option>
-            <option value="storage">Límite de Datos (GB)</option>
-            <option value="emails">Cuota de envío de correos</option>
+            <!-- <option value="storage">Límite de Datos (GB)</option>
+            <option value="emails">Cuota de envío de correos</option> -->
           </select>
         </div>
         <div class="relative w-full max-w-[800px] mx-auto h-[300px] max-h-[400px]">
@@ -162,7 +178,7 @@
       <div class="container mx-auto px-6 py-20 text-center">
         <h2 class="text-3xl font-extrabold text-white">¿Listo para tomar el control de tu facturación?</h2>
         <p class="mt-4 text-lg text-blue-200 max-w-2xl mx-auto">Únete a los negocios que ya están facturando de forma
-          inteligente en El Salvador. Elige tu plan y empieza en minutos.</p>
+          inteligente en El Salvador. Elige tu plan y empieza ya.</p>
         <div class="mt-8">
           <a href="#planes"
             class="bg-momoto-red text-white font-bold text-xl py-4 px-10 rounded-lg hover:bg-red-700 transition">Ver
@@ -175,7 +191,7 @@
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8">
     <div class="container mx-auto px-6 text-center">
-      <p>&copy; 2025 Facturador Momoto. Un producto de MomotoLabs.</p>
+      <p>&copy; <span id="current-year"></span> Facturador Momoto. Un producto de MomotoLabs.</p>
       <p class="text-sm text-gray-400 mt-2">Hecho con 💙 en El Salvador.</p>
     </div>
   </footer>
