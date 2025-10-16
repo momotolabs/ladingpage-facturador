@@ -7,18 +7,16 @@ document.addEventListener('DOMContentLoaded', function () {
         price: '9.50',
         idealFor: 'Profesionales independientes y microempresas',
         features: [
-          { name: 'DTEs por Mes', value: 'Hasta 150', included: true },
-          { name: 'Usuarios Incluidos', value: '1', included: true },
-          { name: 'Límite de Datos', value: '1 GB', included: true },
-          { name: 'Cuota de envío de correos', value: 'Hasta 200', included: true },
+          { name: 'Hasta <strong>150</strong> DTEs por mes', value: 'Hasta 150', included: true },
+          { name: '<strong>1</strong> Usuario Incluido', value: '1', included: true },
+          { name: '<strong>$0.09</strong> ctvs por DTE adicional', value: '1 GB', included: true },
           { name: 'Habilitación "Guante Blanco"', value: '✓', included: true },
-          { name: 'Soporte (Email, WhatsApp)', value: '✓', included: true },
+          { name: 'Soporte por Email', value: '✓', included: true },
           { name: 'Panel de Negocios Básico', value: '✓', included: true },
-          { name: 'Catálogo de productos/servicios', value: '-', included: false },
-          { name: 'Base de datos de clientes', value: '-', included: false },
-          { name: 'Reportes Avanzados', value: '-', included: false },
-          { name: 'Acceso a la API', value: '-', included: false },
-          { name: 'Soporte prioritario', value: '-', included: false },
+          { name: 'Creación y transmisión de DTE central', value: '✓', included: true },
+          { name: 'Seguimiento de estado y notificaciones', value: '✓', included: true },
+          { name: 'Catalogo de productos/servicios', value: '✓', included: true },
+          { name: 'Base de datos de clientes', value: '✓', included: true },
         ],
         theme: { header: 'bg-gray-500', button: 'bg-gray-600 hover:bg-gray-700' }
       },
@@ -28,18 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
         idealFor: 'PYMES en crecimiento',
         isPopular: true,
         features: [
-          { name: 'DTEs por Mes', value: 'Hasta 500', included: true },
-          { name: 'Usuarios Incluidos', value: '3', included: true },
-          { name: 'Límite de Datos', value: '5 GB', included: true },
-          { name: 'Cuota de envío de correos', value: 'Hasta 800', included: true },
+          { name: 'Hasta <strong>500</strong> DTEs por mes', value: 'Hasta 500', included: true },
+          { name: '<strong>3</strong> Usuarios Incluidos', value: '3', included: true },
+          { name: '<strong>$0.08</strong> ctvs por DTE adicional', value: '5 GB', included: true },
           { name: 'Habilitación "Guante Blanco"', value: '✓', included: true },
-          { name: 'Soporte (Email, WhatsApp)', value: '✓', included: true },
+          { name: 'Soporte por Email', value: '✓', included: true },
           { name: 'Panel de Negocios Básico', value: '✓', included: true },
-          { name: 'Catálogo de productos/servicios', value: '✓', included: true },
+          { name: 'Creación y transmisión de DTE central', value: '✓', included: true },
+          { name: 'Seguimiento de estado y notificaciones', value: '✓', included: true },
+          { name: 'Catalogo de productos/servicios', value: '✓', included: true },
           { name: 'Base de datos de clientes', value: '✓', included: true },
-          { name: 'Reportes Avanzados', value: '-', included: false },
-          { name: 'Acceso a la API', value: '-', included: false },
-          { name: 'Soporte prioritario', value: '-', included: false },
         ],
         theme: { header: 'bg-momoto-blue', button: 'bg-momoto-blue hover:bg-blue-900' }
       },
@@ -48,18 +44,16 @@ document.addEventListener('DOMContentLoaded', function () {
         price: '39.50',
         idealFor: 'Empresas con mayor volumen y equipos',
         features: [
-          { name: 'DTEs por Mes', value: 'Hasta 1,500', included: true },
-          { name: 'Usuarios Incluidos', value: '10', included: true },
-          { name: 'Límite de Datos', value: '20 GB', included: true },
-          { name: 'Cuota de envío de correos', value: 'Hasta 2,000', included: true },
+          { name: 'Hasta <strong>1,500</strong> DTEs por mes', value: 'Hasta 500', included: true },
+          { name: '<strong>10</strong> Usuarios Incluidos', value: '3', included: true },
+          { name: '<strong>$0.07</strong> ctvs por DTE adicional', value: '5 GB', included: true },
           { name: 'Habilitación "Guante Blanco"', value: '✓', included: true },
-          { name: 'Soporte (Email, WhatsApp)', value: '✓', included: true },
+          { name: 'Soporte por Email', value: '✓', included: true },
           { name: 'Panel de Negocios Básico', value: '✓', included: true },
-          { name: 'Catálogo de productos/servicios', value: '✓', included: true },
+          { name: 'Creación y transmisión de DTE central', value: '✓', included: true },
+          { name: 'Seguimiento de estado y notificaciones', value: '✓', included: true },
+          { name: 'Catalogo de productos/servicios', value: '✓', included: true },
           { name: 'Base de datos de clientes', value: '✓', included: true },
-          { name: 'Reportes Avanzados', value: '✓', included: true },
-          { name: 'Acceso a la API', value: '✓', included: true },
-          { name: 'Soporte prioritario', value: '-', included: false },
         ],
         theme: { header: 'bg-momoto-purple', button: 'bg-momoto-purple hover:bg-purple-800' }
       },
@@ -68,18 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
         price: 'Contáctanos',
         idealFor: 'Grandes empresas con requisitos únicos',
         features: [
-          { name: 'DTEs por Mes', value: 'Ilimitados', included: true },
-          { name: 'Usuarios Incluidos', value: 'Personalizado', included: true },
-          { name: 'Límite de Datos', value: 'Personalizado', included: true },
-          { name: 'Cuota de envío de correos', value: 'Personalizado', included: true },
-          { name: 'Habilitación "Guante Blanco"', value: '✓', included: true },
-          { name: 'Soporte (Email, WhatsApp)', value: '✓', included: true },
-          { name: 'Panel de Negocios Básico', value: '✓', included: true },
-          { name: 'Catálogo de productos/servicios', value: '✓', included: true },
-          { name: 'Base de datos de clientes', value: '✓', included: true },
-          { name: 'Reportes Avanzados', value: '✓', included: true },
-          { name: 'Acceso a la API', value: '✓', included: true },
-          { name: 'Soporte prioritario', value: '✓', included: true },
+          { name: 'Personalizado basado en necesidades específicas', value: 'Ilimitados', included: true },
+          { name: 'Recomendado para empresas grandes, integradores de software o negocios con requisitos únicos', value: 'Personalizado', included: true },
+          { name: 'Funciones personalizadas, DTEs ilimitados, infraestructura dedicada, soporte premium, capacitación personalizada.', value: 'Personalizado', included: true },
         ],
         theme: { header: 'bg-gray-800', button: 'bg-gray-800 hover:bg-gray-900' }
       }
@@ -120,9 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
                                     <span class="text-gray-500">/mes</span>
                                 `}
                             </div>
-                            <ul class="space-y-3 text-gray-600 mb-8 flex-grow">
-                                ${plan.features.slice(0, 7).map(feature => `
-                                    <li class="flex items-center">
+                            <ul class="space-y-3 text-gray-600 mb-8 flex-grow text-sm">
+                                ${plan.features.map(feature => `
+                                    <li class="flex items-start">
                                         <span class="${feature.included ? 'text-momoto-red' : 'text-gray-400'} mr-2 font-bold">${feature.included ? '✓' : '—'}</span>
                                         <span>${feature.name}</span>
                                     </li>
