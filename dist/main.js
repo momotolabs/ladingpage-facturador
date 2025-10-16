@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     plans: [
       {
         name: 'Profesional',
-        price: '9.50',
+        price: '12.50',
         idealFor: 'Profesionales independientes y microempresas',
         features: [
           { name: 'Hasta <strong>150</strong> DTEs por mes', value: 'Hasta 150', included: true },
